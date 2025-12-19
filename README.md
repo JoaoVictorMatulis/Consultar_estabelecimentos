@@ -37,7 +37,7 @@ Os dados são coletados a partir de uma planilha Excel de entrada e salvos em fo
 1. **Clone ou baixe o repositório:**
 
 ```bash
-git clone <url-do-repositorio>
+git clone https://github.com/JoaoVictorMatulis/Consultar_estabelecimentos
 cd Consultar_estabelecimentos
 ```
 
@@ -185,3 +185,4 @@ O código possui tratamento de erros robusto que permite continuar a execução 
 - É recomendado não interagir com o navegador enquanto o programa está em execução
 - A velocidade de coleta depende da conexão com a internet e do tempo de resposta do Google Maps
 - Respeite os termos de uso do Google Maps ao utilizar este script
+
