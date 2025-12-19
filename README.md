@@ -185,7 +185,3 @@ O código possui tratamento de erros robusto que permite continuar a execução 
 - É recomendado não interagir com o navegador enquanto o programa está em execução
 - A velocidade de coleta depende da conexão com a internet e do tempo de resposta do Google Maps
 - Respeite os termos de uso do Google Maps ao utilizar este script
-
-## 📝 Licença
-
-Este projeto é fornecido "como está", sem garantias de qualquer tipo.
