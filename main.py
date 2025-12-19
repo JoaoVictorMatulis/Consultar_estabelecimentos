@@ -6,6 +6,8 @@ import time
 import os
 import tomllib
 
+#teste
+
 def _substituir_diretorios(obj, base_dir: str):
     """
     Substitui os diretórios na configuração
