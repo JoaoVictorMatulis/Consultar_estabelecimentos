@@ -6,8 +6,6 @@ import time
 import os
 import tomllib
 
-#teste
-
 def _substituir_diretorios(obj, base_dir: str):
     """
     Substitui os diretórios na configuração
@@ -63,31 +61,41 @@ def main():
     full_result_research = {} # Essa variável é usada para armazenar os resultados da coleta de dados
 
     # Loop principal
+    # Nessa parte eu faço um loop para coletar os dados de cada estabelecimento da planilha
     for index, row in planilha.iterrows():
-        # Resetando as variáveis de controle
+        # Resetando as variáveis de controle para cada iteração
         tentativas = 0
         while tentativas < tentativas_maximas:
             try:
-                establishment_name = row[config["planilha_atuacao"]["coluna_estabeleciomento"]]
+                # Aqui eu coleto as informações da linha atual da planilha
+                establishment_type = row[config["planilha_atuacao"]["coluna_estabeleciomento"]]
                 qtd_results = row[config["planilha_atuacao"]["coluna_qtd"]]
-                result_research = collect_data(driver, establishment_name, qtd_results)
-                full_result_research[establishment_name] = result_research
-                log_info(f"Dados coletados para o estabelecimento: {establishment_name}")
+
+                # Aqui eu chamo a função collect_data para coletar os dados do estabelecimento
+                result_research = collect_data(driver, establishment_type, qtd_results)
+                # Armazeno os resultados da coleta de dados em um dicionário para cada tipo de estabelecimento, para armazenar eles futuramente em um arquivo JSON e Excel.
+                full_result_research[establishment_type] = result_research
+                log_info(f"Dados coletados para o estabelecimento do tipo: {establishment_type}")
                 log_info(f"Dados coletados: {result_research}")
+                # Caso tudo tenha ocorrido bem, eu quero o loop do while e voltar para o loop principal para coletar os dados do próximo estabelecimento.
                 break
             except Exception as e:
                     log_error(f"Erro ao coletar dados: {e}")
+                    # Caso ocorra qualquer erro durante o fluxo de coleta de dados, eu incremento a variável tentativas e reinicio o navegador para tentar coletar os dados novamente.
                     tentativas += 1
                     log_info("Reiniciando o navegador")
                     driver.restart_browser()
                     driver.open_url(url_google_maps)
                     time.sleep(1)
+    
+    # Após todas as iterações, eu escrevo os resultados em um arquivo JSON e Excel.
     log_info(f"Todos os dados coletados: {full_result_research}")
     write_json(full_result_research, config["arquivos"]["resultados_json"])
     log_info(f"Arquivo JSON escrito com sucesso")
     json_to_excel(full_result_research, config["arquivos"]["resultados_excel"])
     log_info(f"Arquivo Excel escrito com sucesso")
 
+    # E finalizo o processo fechando o navegador utilizado pela automação
     log_info(f"Fechando o driver")
     driver.closer_chrome()
     log_info(f"=============== Fim do programa ===============")

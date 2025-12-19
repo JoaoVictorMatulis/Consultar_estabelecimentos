@@ -1,92 +1,38 @@
 {
     "Academias": {
         "0": {
-            "establishment_name": "LM Academia",
-            "establishment_type": "Sala de fitness",
-            "establishment_rate": "3,9",
-            "establishment_avaliation_count": "(22)",
-            "establishment_address": "Rua Clemente Cunha Ferreira, 536 - Vila Perracini, Poá - SP, 08552-290"
-        },
-        "1": {
-            "establishment_name": "Academia Target Fitclub Poá",
+            "establishment_name": "Club Mega Gym - Academia, Ginástica, Natação e muito mais.",
             "establishment_type": "Academia",
-            "establishment_rate": "3,2",
-            "establishment_avaliation_count": "(190)",
-            "establishment_address": "Av. Lucas Nogueira Garcez, 945 - Vila Varela, Poá - SP, 08563-115"
-        },
-        "2": {
-            "establishment_name": "Academia Fama Poá",
-            "establishment_type": "Sala de fitness",
-            "establishment_rate": "4,7",
-            "establishment_avaliation_count": "(54)",
-            "establishment_address": "R. Tanque Verde, 45 - Vila Perracini, Poá - SP, 08552-220"
-        },
-        "3": {
-            "establishment_name": "Academia Smart Fit - Avenida Brasil",
-            "establishment_type": "Academia",
-            "establishment_rate": "4,6",
-            "establishment_avaliation_count": "(239)",
-            "establishment_address": "Av. Brasil, 62 - Vila Correa, Ferraz de Vasconcelos - SP, 08502-000"
+            "establishment_rate": "3,4",
+            "establishment_avaliation_count": "(519)",
+            "establishment_address": "Shopping São Francisco - Av. Dr. Cândido Motta Filho, 545 - Cidade São Francisco, São Paulo - SP, 05351-000"
         }
     },
     "Restaurantes": {
         "0": {
-            "establishment_name": "Dr. Churrasco Assados e Grelhados",
+            "establishment_name": "Nhô Brasil",
             "establishment_type": "Restaurante",
-            "establishment_rate": "4,8",
-            "establishment_avaliation_count": "(196)",
-            "establishment_address": "Av. Brasil, 339 - Vila Correa, Ferraz de Vasconcelos - SP, 08502-000"
-        },
-        "1": {
-            "establishment_name": "Lanchonete D'FAMILIA",
-            "establishment_type": "Restaurante",
-            "establishment_rate": "4,8",
-            "establishment_avaliation_count": "(54)",
-            "establishment_address": "Rua Clemente Cunha Ferreira, 539 - Vila Perracini, Poá - SP, 08552-330"
-        },
-        "2": {
-            "establishment_name": "Aylla Cozinha Oriental",
-            "establishment_type": "Restaurante asiático",
-            "establishment_rate": "4,9",
-            "establishment_avaliation_count": "(940)",
-            "establishment_address": "R. Padre Eustáquio, 163 - Vila Idalina, Poá - SP, 08562-400"
-        },
-        "3": {
-            "establishment_name": "Mana Caicara",
-            "establishment_type": "Restaurante de frutos do mar",
-            "establishment_rate": "4,5",
-            "establishment_avaliation_count": "(2.042)",
-            "establishment_address": "Av. Vital Brasil, 300 - Vila Acoreana, Poá - SP, 08557-000"
+            "establishment_rate": "4,3",
+            "establishment_avaliation_count": "(189)",
+            "establishment_address": "Av. Mutinga, 3725 - Jardim Santo Elias, São Paulo - SP, 05110-000"
         }
     },
     "Sorveterias": {
         "0": {
-            "establishment_name": "The Best Açaí - Lajeado velho (Guaianases)",
+            "establishment_name": "Belari Gelato Artesanal",
             "establishment_type": "Sorveteria",
             "establishment_rate": "4,9",
-            "establishment_avaliation_count": "",
-            "establishment_address": "Estr. do Lageado Velho, 644 - Vila Iolanda(Lajeado), São Paulo - SP, 08451-056"
-        },
-        "1": {
-            "establishment_name": "Milk Belly Poá",
-            "establishment_type": "Sorveteria",
-            "establishment_rate": "4,8",
-            "establishment_avaliation_count": "(70)",
-            "establishment_address": "Av. Nove de Julho, 143 - Centro, Poá - SP, 08550-100"
-        },
-        "2": {
-            "establishment_name": "Frutico",
-            "establishment_type": "Sorveteria",
-            "establishment_rate": "4,5",
-            "establishment_avaliation_count": "(558)",
-            "establishment_address": "Av. Dom Pedro II, 192 - Vila Romanopolis, Ferraz de Vasconcelos - SP, 08500-400"
-        },
-        "3": {
-            "establishment_name": "Sorveteria Spumoni",
-            "establishment_type": "Sorveteria especializada em sundaes",
-            "establishment_rate": "4,5",
-            "establishment_avaliation_count": "(2.177)",
-            "establishment_address": "Av. Nove de Julho, 936 - Vila das Acácias, Poá - SP, 08557-100"
+            "establishment_avaliation_count": "(4.123)",
+            "establishment_address": "Av. Sport Club Corinthians Paulista, 366 - Loja 4 - Km 18, Osasco - SP, 06132-380"
+        }
+    },
+    "Shopping": {
+        "0": {
+            "establishment_name": "Continental Shopping",
+            "establishment_type": "Shopping center",
+            "establishment_rate": "4,3",
+            "establishment_avaliation_count": "(22.284)",
+            "establishment_address": "Av. Leão Machado, 100 - Parque Continental, São Paulo - SP, 05328-020"
         }
     }
 }
