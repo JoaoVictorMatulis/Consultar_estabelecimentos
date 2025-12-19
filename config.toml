@@ -1,0 +1,12 @@
+[base]
+tentativas_maximas = 3
+
+[arquivos]
+resultados_json = "|Diretorio_atual|/data/results/resultados.json"
+resultados_excel = "|Diretorio_atual|/data/results/resultados.xlsx"
+
+[planilha_atuacao]
+caminho_planilha = "|Diretorio_atual|/data/data.xlsx"
+nome_aba = "Plan1"
+coluna_estabeleciomento = "Estabelecimento"
+coluna_qtd =  "Quantidade"
